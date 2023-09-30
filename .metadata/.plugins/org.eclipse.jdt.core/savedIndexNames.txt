@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+C:\Users\alano\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
+3793855589.index
+1865797976.index
+3627026387.index
+755148695.index
+1353826651.index

@@ -1,0 +1,45 @@
+package logicOperators;
+
+import java.util.Scanner;
+
+public class Ejercicio {
+	public static void main(String[] args) {
+
+		// Enrique, Paola y Mariana se dirigen a la MacStore y deciden comprar un iPhone
+		// 15 cada uno. La tienda tiene una promoción por el mes patrio: "Si el total de
+		// tu compra supera los 25 mil pesos, obtén un 10% de descuento". Enrique, Paola
+		// y Mariana deciden comprar los tres equipos con una sola tarjeta. Al llegar a
+		// caja, la cajera les menciona que la tienda en estos momentos cuenta con una
+		// promoción de 12 meses sin intereses, por lo tanto, deciden pagar con la TDC
+		// de Mariana. ¿Cuál sería el costo total por los 3 equipos sin descuento?
+		// ¿Aplicaría el descuento en su compra? ¿Cuál sería el costo total con el
+		// descuento aplicado? ¿Cuánto pagarían mensualmente?
+
+		Scanner sc = new Scanner(System.in);
+
+		int defecto = 0;
+		System.out.println(
+				"¿Desea seleccionar los telefonos o utilizar el precio por defecto?\n1). Precios por defecto\2). Precios personalizados");
+		try {
+
+			defecto = sc.nextInt();
+		} catch (Exception e) {
+			System.out.println("No es un numero xD");
+		}
+		switch (defecto) {
+		case 1:
+
+			break;
+		case 2:
+			int telefonos=0;
+			do {
+
+				telefonos++;
+			} while (telefonos <= 3);
+			break;
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + defecto);
+		}
+
+	}
+}

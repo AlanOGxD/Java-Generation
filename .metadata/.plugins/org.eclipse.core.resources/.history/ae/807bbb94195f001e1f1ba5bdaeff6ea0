@@ -1,0 +1,21 @@
+package loops;
+
+public class WhileLoop {
+
+	public static void main(String[] args) {
+		/*
+		 * Crear un programa para un cajero bancario - El programa me mostrará 4
+		 * opciones: 1. Consultar saldo 2. Ingresar dineros 3. Retirar dineros 4. Salir
+		 * - Mostrar mensaje de bienvenida al usuario, darle contexto y solicitar que
+		 * elija una opción (número) - Mostrar al usuario la opción que eligió y
+		 * permitir que elija otra opción - El usuario puede salir del programa
+		 * escribiendo 4 (salir)
+		 */
+		System.out.println(
+				"Bienvenido al Banco Generation, elige cualquiera de las opciones, para ello escribe el número que corresponda:");
+		System.out.println("1. Consultar saldo");
+		System.out.println("2. Ingresar dineros");
+		System.out.println("3. Retirar dineros");
+		System.out.println("4. Salir");
+	}
+}
