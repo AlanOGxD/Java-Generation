@@ -24,19 +24,19 @@ public class TestUsuario {
 
       Usuario userOne = new Usuario (tipoUsuario, username, password);
 
-      System.out.println("------------------------------");
+      System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
       System.out.println("Prueba de cambio de contraseña");
-      System.out.println("------------------------------");
+      System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 
-      System.out.print("Ingresa una contraseña: ");
+      System.out.print("Ingresa una contraseña (contraseña vacia): ");
       userOne.setPassword(scan.next());
-      System.out.println(".  .  .  .  .  .  .  .  .  .  .  .");
+      System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 
       System.out.print("Ingresa la contraseña anterior (" + userOne.getPassword() + "): ");
       userOne.setPassword(scan.next());
-      System.out.println(".  .  .  .  .  .  .  .  .  .  .  .");
+      System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 
-      System.out.print("Ingresa una nueva contraseña: ");
+      System.out.print("Ingresa una nueva contraseña(se cumplen condiciones): ");
       userOne.setPassword(scan.next());
 
       scan.close();
