@@ -1,4 +1,4 @@
-package POO;
+package Persona;
 
 public class Test {
 	
@@ -18,7 +18,7 @@ public class Test {
 		//Instancia de Dentista
 		Dentista Simi = new Dentista("Dr. Simi", "Lares", (byte)50, "1234567890", "simi@lares.com", "Odontología", "1544385", "Consultorio B5", "avanzado", "matutino", 500);
 		Simi.calcularSalario();
-		Simi.imprimirInfoDentista();
+		//Simi.imprimirInfoDentista();
 		
 		
 		System.out.println("**********************");
