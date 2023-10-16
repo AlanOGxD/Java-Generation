@@ -1,29 +1,36 @@
 package Figura;
+//Clase concreta o tradicional que implementa metodos de una interfaz llamada Calculable
+public class Esfera implements Calculable {
 
-//clase concreta que implementa metodos de una interfaz llamada calculable
-public class Esfera implements Calculable{
+  //Atributos
+  double radio;
+  double pi = Math.PI;
 
-	//Atributos
-	double r, pi=3.1415;
-	
-	@Override
-	public double calcularArea() {
-		// TODO Auto-generated method st
-		return 0;
-	}
+  //Constructor
+  Esfera(double radio){
+      this.radio = radio;
+  }
 
-	@Override
-	public double calcularVolumen() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+  //Metodos
+  @Override
+  public double calcularArea() {
+      //Area 4 π r*2
+      double area = (4*pi) * (radio * radio);
+      return area;
+  }
 
-	@Override
-	public double calcularPerimetro() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+  @Override
+  public double calcularVolumen() {
+      //Volumen V = 4/3 π r³
+      double volumen = (4 / 3) * pi * (radio * radio * radio);
+      return volumen;
+  }
 
-	
-	
-}//Class esfera
+  @Override
+  public double calcularPerimetro() {
+      //Perimetro 2 * π * r
+      double perimetro = 2 * pi * radio;
+      return perimetro;
+  }
+
+}
